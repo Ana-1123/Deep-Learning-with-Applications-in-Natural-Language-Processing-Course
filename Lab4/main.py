@@ -4,7 +4,7 @@ from nltk import CFG, ChartParser
 grammar = CFG.fromstring("""
 S -> NP VP | NP VP NP
 NP -> Det N | Det Adj N | N | Adj N | NP PP | NP Conj NP| VG N | NP Conj NP |PP NP | NP V NP
-VP -> V | V NP | V PP | Aux V | VP Adj | V Adv |Aux VG
+VP -> V | V NP | V PP | Aux V | VP Adj | V Adv | Aux VG
 PP -> P NP | Adv P
 Det -> 'the'
 N -> 'planes' | 'parents' | 'bride' | 'groom' | 'act'
