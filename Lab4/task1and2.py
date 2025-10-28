@@ -1,4 +1,3 @@
-import nltk
 from nltk import CFG, ChartParser
 
 grammar = CFG.fromstring("""
